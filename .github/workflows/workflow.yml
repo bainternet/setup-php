@@ -25,6 +25,6 @@ jobs:
       run: node lib/install.js
       env:
         php-version: ${{ matrix.php-versions }}
-        extension-csv: "mbstring, curl, mysqli, json, xml, xdebug, pcov, phpdbg"
+        extension-csv: "mbstring, curl, mysqli, json, xml, xdebug, pcov, phpdbg, zip"
     - name: Testing
       run: php -m
